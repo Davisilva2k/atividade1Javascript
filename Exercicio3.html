@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio3</title>
+</head>
+
+<body>
+    <script>
+
+        function aplicarDesconto(preco, desconto) {
+            var valorDesconto = preco * (desconto / 100)
+            var precoFinal = preco - valorDesconto
+            console.log("Valor normal: " + preco);
+            console.log("valor com Desconto " + valorDesconto);
+            return precoFinal;
+        }
+        let precoFinal = aplicarDesconto(100, 10)
+
+        console.log("Valor final: " + precoFinal)
+    </script>
+
+</body>
+
+</html>

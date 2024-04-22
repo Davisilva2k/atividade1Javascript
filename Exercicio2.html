@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio2</title>
+</head>
+
+<body>
+    <script>
+        let livros = [
+            {
+                titulo: "Como ter motivação",
+                autor: "não sei",
+                ano: 2000,
+                emprestado: true,
+                categorias: ["acao", "comedia"],
+                revisoes: [
+                    {
+                        comentarios: "otimo livro recomendo a todos",
+                        avaliacao: 5
+                    },
+                    {
+                        comentarios: "livro mais ou menos recomendo a alguns publicos",
+                        avaliacao: 3
+                    },
+                    {
+                        comentarios: " livro péssimo não recomendo",
+                        avaliacao: 0
+                    }
+                ]
+
+            }
+        ]
+        var livrosEmprestado = "não";
+        if (livros[0].emprestado) {
+            livrosEmprestado = "sim";
+        }
+
+        console.log(`titulo:${livros[0].titulo}
+autor:${livros[0].autor}
+ano:${livros[0].ano}
+emprestado:${livrosEmprestado}
+categoria:${livros[0].categorias[0]}
+avaliacao:${livros[0].revisoes[1].avaliacao}`);
+    </script>
+</body>
+
+</html>
